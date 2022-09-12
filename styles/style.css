@@ -1,0 +1,7 @@
+img {
+  height: 10rem;
+  width: 10rem;
+  display: block;
+  border: 2px solid black;
+  object-fit: cover;
+}
