@@ -22,16 +22,12 @@ ul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-<<<<<<< HEAD
 }
-=======
-    }
 
-  h3 {
-    font-family: 'Manrope'
-  }
-
-  .js_bin {
+h3 {
     font-family: 'Manrope';
   }
->>>>>>> 8dac7f7926400bf7fa0b2fff003c5f896b486b10
+
+.js_bin {
+    font-family: 'Manrope';
+  }
