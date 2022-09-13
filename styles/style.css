@@ -6,6 +6,10 @@
   padding: 0;
 }
 
+body {
+  font-family: "Manrope";
+}
+
 img {
   height: 10rem;
   width: 10rem;
@@ -23,25 +27,17 @@ ul > li {
   list-style: none;
 }
 
-h3 {
-  font-family: "Manrope";
-}
-
-.js_bin {
-  font-family: "Manrope";
-}
-
-article {
+section {
   opacity: 0;
   transition: opacity 0.2s ease-out;
 }
 
-article.-animate {
+section.-animate {
   opacity: 1;
 }
 
 /* DE KAART */
-.kaart{
+.kaart {
   background: url(file:///C:/Users/david/OneDrive/Documenten/HVA/Eerste%20week/Visite%20overzicht%20pagina/media/achtergrond.jpg);
   background-position: center;
   background-size: cover;
@@ -57,7 +53,7 @@ article.-animate {
   padding-top: 15px;
 }
 
-.kaart h2{
+.kaart h2 {
   color: black;
   margin-top: 10px;
 }
