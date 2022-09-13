@@ -12,11 +12,10 @@ img {
   object-fit: cover;
 }
 
-li {
-  list-style-type: none;
+ul > li {
+  list-style: none;
 }
 
-<<<<<<< HEAD
 article {
   opacity: 0;
   transition: opacity 0.2s ease-out;
@@ -25,6 +24,9 @@ article {
 article.-animate {
   opacity: 1;
 }
-=======
 
->>>>>>> 223cf60878f1d565ea5d6bfeb17790288c27a56e
+ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+}
