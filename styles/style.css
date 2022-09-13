@@ -39,3 +39,45 @@ article {
 article.-animate {
   opacity: 1;
 }
+
+/* DE KAART */
+.kaart{
+  background: url(file:///C:/Users/david/OneDrive/Documenten/HVA/Eerste%20week/Visite%20overzicht%20pagina/media/achtergrond.jpg);
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 7px 20px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
+  width: 460px;
+  height: 238px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding-top: 15px;
+}
+
+.kaart h2{
+  color: black;
+  margin-top: 10px;
+}
+
+.kaart p {
+  color: black;
+  margin-top: 20px;
+}
+
+.profiel_foto {
+  background-position: center;
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  border-radius: 100%;
+  border: 2px solid grey;
+}
+
+/* EINDE KAART */
