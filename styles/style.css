@@ -10,8 +10,35 @@ img {
   display: block;
   border: 2px solid black;
   object-fit: cover;
+  margin-left: 40%;
 }
 
 ul > li {
   list-style: none;
+}
+
+article{
+  margin-top: 2%;
+  text-align: center;
+}
+.prullenmand{
+  margin-top: 2%;
+  text-align: center;
+}
+.js_bin{
+  display: flex;
+  width: 430px;
+  justify-content: space-between;
+  margin: auto;
+}
+.js_image{
+  margin-top: 2%;
+}
+li{
+  color: rgb(20, 27, 8);
+  font-family: sans-serif;
+  border:solid white 2px;
+ background-image: url("../assets/paaper.jpeg");
+ padding:10px;
+ border-radius: 25px;
 }

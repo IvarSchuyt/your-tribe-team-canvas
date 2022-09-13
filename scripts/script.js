@@ -6,7 +6,7 @@ document.querySelectorAll(".js_bin li").forEach((element) => {
   element.addEventListener("click", (event) => {
     const name = event.target.innerText;
     nameElement.innerText = name;
-    imagelement.src = `/assets/${name.toLowerCase()}.webp`;
+    imagelement.src = `./assets/${name.toLowerCase()}.webp`;
     imagelement.alt = `Portret van ${name}`;
   });
 });
