@@ -12,13 +12,12 @@ img {
   object-fit: cover;
 }
 
-
 li {
   list-style-type: none;
 }
 
 ul{
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     }
