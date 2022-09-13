@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Noto+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Noto+Sans&display=swap");
 
 * {
   box-sizing: border-box;
@@ -14,20 +14,28 @@ img {
   object-fit: cover;
 }
 
+ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 ul > li {
   list-style: none;
 }
 
-ul {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
+h3 {
+  font-family: "Manrope";
 }
 
-h3 {
-    font-family: 'Manrope';
-  }
-
 .js_bin {
-    font-family: 'Manrope';
-  }
+  font-family: "Manrope";
+}
+
+article {
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+}
+
+article.-animate {
+  opacity: 1;
+}

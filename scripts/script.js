@@ -8,7 +8,7 @@ document.querySelectorAll(".js_bin li").forEach((element) => {
   element.addEventListener("click", (event) => {
     const name = event.target.innerText;
 
-    // If card is already visible, remove the animation and back after 1 second. Then return.
+    // If card is already visible, do this and then return.
     if (cardElement.classList.contains("-animate")) {
       cardElement.classList.remove("-animate");
 
@@ -18,7 +18,7 @@ document.querySelectorAll(".js_bin li").forEach((element) => {
 
       setTimeout(() => {
         cardElement.classList.add("-animate");
-      }, 1000);
+      }, 600);
 
       return;
     }
