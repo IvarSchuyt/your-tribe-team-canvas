@@ -42,7 +42,7 @@ article.-animate {
 
 /* DE KAART */
 .kaart{
-  background: url(file:///C:/Users/david/OneDrive/Documenten/GitHub/your-tribe-team-canvas/assets/kaart-achtergrond.jpg);
+  background-image: url("../assets/kaart-achtergrond");
   background-position: center;
   background-size: cover;
   box-shadow: 0 7px 20px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
