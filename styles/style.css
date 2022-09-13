@@ -1,7 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 img {
   height: 10rem;
   width: 10rem;
   display: block;
   border: 2px solid black;
   object-fit: cover;
+}
+
+ul > li {
+  list-style: none;
 }
