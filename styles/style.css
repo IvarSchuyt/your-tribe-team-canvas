@@ -41,6 +41,7 @@ article{
   width: 430px;
   justify-content: space-between;
   margin: auto;
+  margin-top: 10px;
 }
 .js_image{
   margin-top: 2%;
