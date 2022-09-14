@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope&family=Noto+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
 
 * {
   box-sizing: border-box;
@@ -21,11 +22,6 @@ img {
   margin-left: 40%;
 }
 
-ul {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
 ul > li {
   list-style: none;
 }
@@ -36,7 +32,7 @@ article{
 }
 .prullenmand{
   margin-top: 2%;
-  text-align: center;
+}
 }
 .js_bin{
   display: flex;
@@ -48,14 +44,34 @@ article{
 .js_image{
   margin-top: 2%;
 }
+
 li{
-  color: rgb(20, 27, 8);
-  font-family: sans-serif;
-  border:solid white 2px;
- background-image: url("../assets/paaper.jpeg");
- padding:10px;
- border-radius: 25px;
+  color: rgb(255, 255, 255);
+  padding-bottom:5px;
+  border-radius: 25px;
+  font-family: 'Walter Turncoat', cursive;
+  display: block;
+  cursor: pointer;
 }
+
+li::after {
+  content: '';
+  width: 0px;
+  height: 1px;
+  display: block;
+  background: rgb(255, 255, 255);
+  transition: 300ms;
+}
+
+li:hover::after {
+  width: 100%;
+}
+
+.bord{
+  display: flex;
+  column-gap: 150px;
+}
+
 section {
   opacity: 0;
   transition: opacity 0.2s ease-out;
