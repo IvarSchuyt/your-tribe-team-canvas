@@ -79,6 +79,12 @@ section.-animate {
   padding-top: 15px;
 }
 
+@media (max-width: 500px) {
+  .kaart {
+    width: 370px;
+  }
+}
+
 .kaart h2 {
   color: black;
   margin-top: 10px;
