@@ -139,4 +139,12 @@ section.-animate {
   border: 2px solid grey;
 }
 
+.grabbelton img{
+background: transparent;
+border-width: 0px;
+scale: 200%;
+position: absolute;
+top: 525px;
+}
+
 /* EINDE KAART */
