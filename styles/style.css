@@ -10,7 +10,7 @@
 body {
   font-family: "Manrope";
   background-image: url("../assets/classroomvideo.gif");
-  background-size: 100%;
+  background-size: 98em;
 }
 
 img {
@@ -95,6 +95,12 @@ section.-animate {
   text-decoration: none;
   display: block;
   padding-top: 15px;
+}
+
+@media (max-width: 500px) {
+  .kaart {
+    width: 370px;
+  }
 }
 
 .kaart h2 {
