@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope&family=Noto+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
 
 * {
   box-sizing: border-box;
@@ -79,6 +80,7 @@ section.-animate {
   text-decoration: none;
   display: block;
   padding-top: 15px;
+  font-family: 'Fredericka the Great', cursive;
 }
 
 @media (max-width: 500px) {
