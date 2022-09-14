@@ -153,6 +153,7 @@ border-width: 0px;
 scale: 200%;
 position: absolute;
 top: 525px;
+transform: translateX(25px)
 }
 
 /* EINDE KAART */
