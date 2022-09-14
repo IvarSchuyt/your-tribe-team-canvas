@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope&family=Noto+Sans&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap");
 
 * {
   box-sizing: border-box;
@@ -11,6 +11,7 @@ body {
   font-family: "Manrope";
   background-image: url("../assets/classroomvideo.gif");
   background-size: 98em;
+  background-position: center;
 }
 
 img {
@@ -26,48 +27,55 @@ ul > li {
   list-style: none;
 }
 
-article{
+article {
   margin-top: 2%;
   text-align: center;
 }
-.prullenmand{
+
+.prullenmand {
   margin-top: 2%;
 }
-}
-.js_bin{
+
+.js_bin {
   display: flex;
+  flex-direction: column;
   width: 430px;
   justify-content: space-between;
   margin: auto;
   margin-top: 10px;
 }
-.js_image{
+
+.js_image {
   margin-top: 2%;
 }
 
-li{
+li {
   color: rgb(255, 255, 255);
-  padding-bottom:5px;
+  padding-bottom: 5px;
   border-radius: 25px;
-  font-family: 'Walter Turncoat', cursive;
-  display: block;
+  font-family: "Walter Turncoat", cursive;
+  display: inline-block;
   cursor: pointer;
+  position: relative;
+  width: fit-content;
 }
 
 li::after {
-  content: '';
+  content: "";
   width: 0px;
   height: 1px;
   display: block;
   background: rgb(255, 255, 255);
   transition: 300ms;
+  position: absolute;
+  bottom: 0;
 }
 
 li:hover::after {
   width: 100%;
 }
 
-.bord{
+.bord {
   display: flex;
   column-gap: 150px;
 }
