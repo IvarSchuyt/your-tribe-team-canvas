@@ -56,7 +56,7 @@ li {
   display: inline-block;
   cursor: pointer;
   position: relative;
-  width: fit-content;
+  width: max-content;
   font-size: 14px;
 }
 
@@ -81,16 +81,22 @@ li:hover::after {
   column-gap: 420px;
   left: 49%;
   transform: translateX(-50%);
-  top: 105px;
+  top: 24vh;
 }
 
 section {
   opacity: 0;
   transition: opacity 0.2s ease-out;
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
 }
 
 section.-animate {
   opacity: 1;
+  pointer-events: unset;
 }
 
 /* DE KAART */
