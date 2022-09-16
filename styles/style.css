@@ -12,7 +12,10 @@ body {
   background-image: url("../assets/classroomvideo.gif");
   background-size: 98em;
   background-position: center;
-  height: 100vh;
+}
+
+html {
+  min-height: 100vh;
 }
 
 img {
@@ -147,13 +150,13 @@ section.-animate {
   border: 2px solid grey;
 }
 
-.grabbelton img{
-background: transparent;
-border-width: 0px;
-scale: 200%;
-position: absolute;
-top: 525px;
-transform: translateX(4.4vh);
+.grabbelton img {
+  background: transparent;
+  border-width: 0px;
+  scale: 200%;
+  position: absolute;
+  top: 525px;
+  transform: translateX(4.4vh);
 }
 
 /* EINDE KAART */
