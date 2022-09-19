@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope&family=Noto+Sans&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap");
 
 * {
   box-sizing: border-box;
@@ -11,6 +11,11 @@ body {
   font-family: "Manrope";
   background-image: url("../assets/classroomvideo.gif");
   background-size: 98em;
+  background-position: center;
+}
+
+html {
+  min-height: 100vh;
 }
 
 img {
@@ -31,58 +36,77 @@ ul > li {
   list-style: none;
 }
 
-article{
+article {
   margin-top: 2%;
   text-align: center;
 }
-.prullenmand{
-  margin-top: 2%;
-}
-.js_bin{
-  display: flex;
-  width: 430px;
-  justify-content: space-between;
-  margin: auto;
-  margin-top: 10px;
-}
-.js_image{
+
+.prullenmand {
   margin-top: 2%;
 }
 
-li{
+.js_bin {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.js_image {
+  margin-top: 2%;
+}
+
+li {
   color: rgb(255, 255, 255);
-  padding-bottom:5px;
+  padding-bottom: 5px;
   border-radius: 25px;
-  font-family: 'Walter Turncoat', cursive;
-  display: block;
+  font-family: "Walter Turncoat", cursive;
+  display: inline-block;
   cursor: pointer;
+  position: relative;
+  width: max-content;
+  font-size: 14px;
 }
 
 li::after {
-  content: '';
+  content: "";
   width: 0px;
   height: 1px;
   display: block;
   background: rgb(255, 255, 255);
   transition: 300ms;
+  position: absolute;
+  bottom: 0;
 }
 
 li:hover::after {
   width: 100%;
 }
 
-.bord{
+.bord {
   display: flex;
-  column-gap: 150px;
+  position: absolute;
+  column-gap: 420px;
+  left: 49%;
+  transform: translateX(-50%);
+  top: 24vh;
 }
 
 section {
   opacity: 0;
   transition: opacity 0.2s ease-out;
+  transition-property: opacity, transform;
+  pointer-events: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 10;
 }
 
 section.-animate {
   opacity: 1;
+  pointer-events: unset;
+  transform: translate(-50%, 0);
 }
 
 /* DE KAART */
@@ -91,14 +115,16 @@ section.-animate {
   background-position: center;
   background-size: cover;
   box-shadow: 0 7px 20px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
-  width: 460px;
+  width: 300px;
   height: 238px;
   margin: 0 auto;
+  border-radius: 9px;
   margin-top: 50px;
   text-align: center;
   text-decoration: none;
   display: block;
   padding-top: 15px;
+  font-family: "Fredericka the Great", cursive;
 }
 
 @media (max-width: 500px) {
@@ -109,12 +135,11 @@ section.-animate {
 
 .kaart h2 {
   color: black;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .kaart p {
   color: black;
-  margin-top: 20px;
 }
 
 .profiel_foto {
@@ -128,6 +153,15 @@ section.-animate {
   margin-top: 10px;
   border-radius: 100%;
   border: 2px solid grey;
+}
+
+.grabbelton img {
+  background: transparent;
+  border-width: 0px;
+  scale: 200%;
+  position: absolute;
+  top: 525px;
+  transform: translateX(4.4vh);
 }
 
 /* EINDE KAART */
