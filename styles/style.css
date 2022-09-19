@@ -124,7 +124,7 @@ section.-animate {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, calc(-50% - 5rem));
+  transform: translate(-50%, calc(-50% - 5rem)) scale(0.5);
 }
 
 @media (max-width: 500px) {
