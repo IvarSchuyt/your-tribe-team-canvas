@@ -100,7 +100,7 @@ section {
 section.-animate {
   opacity: 1;
   pointer-events: unset;
-  transform: translate(-50%, calc(-50% - 12rem));
+  transform: translate(-50%, calc(-50% - 7rem));
 }
 
 /* DE KAART */
@@ -135,7 +135,7 @@ section.-animate {
 
 .kaart h2 {
   color: black;
-  margin-top: 20px;
+
 }
 
 .kaart p {
