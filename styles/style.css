@@ -22,6 +22,11 @@ img {
   margin-left: 40%;
 }
 
+ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
 ul > li {
   list-style: none;
 }
@@ -32,7 +37,6 @@ article{
 }
 .prullenmand{
   margin-top: 2%;
-}
 }
 .js_bin{
   display: flex;
