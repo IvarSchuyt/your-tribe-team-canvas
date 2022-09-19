@@ -18,7 +18,7 @@ html {
   min-height: 100vh;
 }
 
-img {
+.js_image {
   height: 10rem;
   width: 10rem;
   display: block;
@@ -37,7 +37,7 @@ ul > li {
 }
 
 article {
-  margin-top: 2%;
+  margin-top: ;
   text-align: center;
 }
 
@@ -49,11 +49,6 @@ article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 10px;
-}
-
-.js_image {
-  margin-top: 2%;
 }
 
 li {
@@ -88,8 +83,8 @@ li:hover::after {
   position: absolute;
   column-gap: 420px;
   left: 49%;
-  transform: translateX(-50%);
-  top: 24vh;
+  transform: translate(-50%, calc(-50% - 5rem));
+  top: 50%;
 }
 
 section {
@@ -106,7 +101,7 @@ section {
 section.-animate {
   opacity: 1;
   pointer-events: unset;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, calc(-50% - 12rem));
 }
 
 /* DE KAART */
@@ -117,13 +112,20 @@ section.-animate {
   box-shadow: 0 7px 20px rgb(0 0 0 / 16%), 0 3px 6px rgb(0 0 0 / 23%);
   width: 300px;
   height: 238px;
-  margin: 0 auto;
   border-radius: 9px;
-  margin-top: 50px;
   text-align: center;
   text-decoration: none;
-  display: block;
-  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.js_card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, calc(-50% - 5rem));
 }
 
 @media (max-width: 500px) {
@@ -147,20 +149,23 @@ section.-animate {
   width: 80px;
   height: 80px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
   border-radius: 100%;
   border: 2px solid grey;
+  margin: 0 auto;
 }
 
 .grabbelton img {
-  background: transparent;
+  display: flex;
+  object-fit: contain;
   border-width: 0px;
-  scale: 200%;
+  height: 15rem;
+}
+
+.grabbelton {
   position: absolute;
-  top: 525px;
-  transform: translateX(4.4vh);
-   }
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, calc(-50% + 14rem));
+}
 
 /* EINDE KAART */
