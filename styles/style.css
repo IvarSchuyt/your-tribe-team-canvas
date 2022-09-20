@@ -50,6 +50,12 @@ article {
   justify-content: space-between;
 }
 
+@media (max-width: 820px) {
+  .js_bin{
+    display:none;
+  }
+}
+
 li {
   color: rgb(255, 255, 255);
   padding-bottom: 5px;
