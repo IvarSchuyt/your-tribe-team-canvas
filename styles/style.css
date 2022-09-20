@@ -173,3 +173,62 @@ section.-animate {
 }
 
 /* EINDE KAART */
+
+/* DE DROPDOWN */
+details {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  overflow:auto;
+  padding: .5em .5em 0;
+  background-color: white;
+  width: 120px;
+  display: none;
+}
+
+@media (max-width: 820px) {
+  details {
+    display: block;
+    left: 50%;
+    top: 71%;
+    position: absolute;
+    z-index: 999;
+    margin-left: -60px;
+  }
+}
+
+summary {
+  font-weight: bold;
+  margin: -.5em -.5em 0;
+  padding: 0.5em;
+}
+
+details[open] {
+  padding: .5em;
+  height: 100px;
+}
+
+details[close] {
+  padding: .5em;
+  height: 100px;
+}
+
+details[open] summary {
+  border-bottom: 1px solid #aaa;
+  margin-bottom: .5em;
+}
+
+details li {
+  list-style: none;
+  padding: 2px
+}
+
+details li a{
+  text-decoration: none;
+  color: black;
+}
+
+details ul {
+  padding-left: 10px;
+}
+
+/* EINDE DROPDOWN */
