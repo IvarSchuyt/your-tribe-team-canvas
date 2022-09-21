@@ -138,12 +138,6 @@ section.-animate {
   transform: translate(-50%, calc(-50% - 5rem)) scale(0.5);
 }
 
-@media (max-width: 500px) {
-  .kaart {
-    width: 370px;
-  }
-}
-
 .kaart h2 {
   color: black;
   margin-top: 1rem;
