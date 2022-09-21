@@ -1,4 +1,4 @@
-# Team Canvas
+# Your Tribe - Team Canvas
 
 Vul met jouw team dit canvas in om een goed vertrekpunt voor jouw teamproject te hebben.
 
